@@ -1,5 +1,5 @@
 ---
-# file: ansible_rails/roles/ssh-iptables/tasks/main.yml
+# file: roles/ssh-iptables/tasks/main.yml
 - name: create iptables
   template: src=iptables.j2 dest=/etc/sysconfig/iptables
 

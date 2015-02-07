@@ -1,21 +1,21 @@
 ---
 # file: provisioning/local.yml
-- name: Nginx-Playbook  # タスク名
+- name: LAMP-Playbook   # タスク名
   hosts: local          # 対象ホスト
   sudo: yes             # sudoするか
   roles:                # 実際のタスクを記述しているディレクトリ
     - ssh-iptables
     - yum-update
-    - nginx
+    - httpd
     - user
-    - ruby
-    - mysql
+    # - php
+    # - mysql
   vars_prompt:
     - name: "dbpassword"
       prompt: "Please enter MySQL user password"
       default: "hoge"
   tags:                 # タスクをタグ付け
-    - nginx
+    - httpd
     - user
-    - ruby
-    - mysql
+    # - php
+    # - mysql
