@@ -8,7 +8,7 @@
     - yum-update
     - httpd
     - user
-    # - php
+    - php
     # - mysql
   vars_prompt:
     - name: "dbpassword"
@@ -17,5 +17,5 @@
   tags:                 # タスクをタグ付け
     - httpd
     - user
-    # - php
+    - php
     # - mysql

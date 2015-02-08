@@ -1,0 +1,12 @@
+---
+# file: roles/php/tasks/main.yml
+- name: install php
+  yum: name={{ item }} state=present
+  with_items:
+    - php
+    - php-devel
+    - php-mbstring
+    - php-mysql
+    - php-pdo
+  notify:
+    - restart httpd
