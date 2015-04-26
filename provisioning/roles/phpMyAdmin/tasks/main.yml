@@ -2,4 +2,7 @@
 # file: roles/phpMyAdmin/tasks/main.yml
 - name: install phpMyAdmin
   yum: pkg=phpmyadmin state=installed enablerepo=epel
+
+- name: create phpMyAdmin setting file
+  template: src=phpMyAdmin.conf.j2 dest=/etc/httpd/conf.d/phpMyAdmin.conf
   notify: restart httpd
