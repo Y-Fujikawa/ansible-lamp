@@ -11,6 +11,7 @@
     - user
     - php
     - mysql
+    - phpMyAdmin
   vars_prompt:
     - name: "dbpassword"
       prompt: "Please enter MySQL user password"
