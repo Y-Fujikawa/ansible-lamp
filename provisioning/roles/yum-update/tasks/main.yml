@@ -11,3 +11,6 @@
 
 - name: install mod_ssl
   yum: name=mod_ssl state=installed
+
+- name: install java
+  yum: name=java-1.7.0-openjdk-devel.x86_64 state=installed
