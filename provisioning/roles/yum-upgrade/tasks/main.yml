@@ -1,0 +1,4 @@
+---
+# file: roles/yum-upgrade/tasks/main.yml
+- name: upgrade CentOS to 6.6
+  command: yum upgrade
