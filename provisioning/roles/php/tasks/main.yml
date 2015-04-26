@@ -8,5 +8,6 @@
     - php-mbstring
     - php-mysql
     - php-pdo
+    - php-pear
   notify:
     - restart httpd
