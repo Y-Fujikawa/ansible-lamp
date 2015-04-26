@@ -14,3 +14,6 @@
 
 - name: install java
   yum: name=java-1.7.0-openjdk-devel.x86_64 state=installed
+
+- name: install csh
+  yum: name=csh state=installed
