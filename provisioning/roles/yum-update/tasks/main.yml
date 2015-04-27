@@ -2,3 +2,18 @@
 # file: roles/yum-update/tasks/main.yml
 - name: update yum
   command: yum -y update
+
+- name: install ntp
+  yum: name=ntp state=installed
+
+- name: be sure ntpd is running and enabled
+  service: name=ntpd state=running enabled=yes
+
+- name: install mod_ssl
+  yum: name=mod_ssl state=installed
+
+- name: install java
+  yum: name=java-1.7.0-openjdk-devel.x86_64 state=installed
+
+- name: install csh
+  yum: name=csh state=installed

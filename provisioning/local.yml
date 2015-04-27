@@ -10,7 +10,8 @@
     - httpd
     - user
     - php
-    # - mysql
+    - mysql
+    - phpMyAdmin
   vars_prompt:
     - name: "dbpassword"
       prompt: "Please enter MySQL user password"
@@ -19,4 +20,4 @@
     - httpd
     - user
     - php
-    # - mysql
+    - mysql
