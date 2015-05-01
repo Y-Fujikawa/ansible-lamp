@@ -1,0 +1,16 @@
+---
+# file: roles/create_folder/tasks/main.yml
+- name: document file directory
+  file: path=/home/sites/{{ project_name }}/html state=directory owner=apache group=apache mode=0701
+
+- name: module file directory
+  file: path=/home/sites/includes state=directory owner=root group=root mode=0755
+
+- name: log file directory
+  file: path=/home/sites/{{ project_name }}/logs/ state=directory owner=apache group=apache mode=0701
+
+- name: change authority
+  file: path=/home/sites state=directory owner=apache group=apache mode=0701
+
+- name: batch file directory
+  file: path=/home/sites/{{ project_name }}/batch/log state=directory owner=root group=root mode=0755
