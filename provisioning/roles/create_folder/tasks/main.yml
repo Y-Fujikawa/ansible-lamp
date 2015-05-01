@@ -11,3 +11,6 @@
 
 - name: change authority
   file: path=/home/sites state=directory owner=apache group=apache mode=0701
+
+- name: batch file directory
+  file: path=/home/sites/{{ project_name }}/batch/log state=directory owner=root group=root mode=0755
