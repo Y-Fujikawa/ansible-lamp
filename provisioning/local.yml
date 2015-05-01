@@ -12,6 +12,7 @@
     - php
     - mysql
     - phpMyAdmin
+    - create_folder
   vars_prompt:
     - name: "dbpassword"
       prompt: "Please enter MySQL user password"

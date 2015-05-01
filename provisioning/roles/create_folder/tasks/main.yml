@@ -1,0 +1,4 @@
+---
+# file: roles/create_folder/tasks/main.yml
+- name: document file directory
+  file: path=/home/sites/{{ project_name }}/html state=directory owner=root group=root mode=0755
